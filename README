@@ -1,3 +1,25 @@
 My multi-repo graphics projects as a collection of git submodules and build scripts.
 
 Individual projects are maintained as separate branches.
+
+This branch is for development of Vulkan extension
+VK_EXT_external_memory_acquire_unmodified.
+
+To fetch the source for everything, run:
+    git submodule update --init
+
+The dEQP branch adds testcases
+`dEQP-VK.dEQP-VK.memory.external_memory_acquire_unmodified.*`.  Currently,
+there exist tests for VK_EXT_external_memory_dma_buf which use Vulkan as the
+memory allocator (as opposed as using GBM as allocator). There do not exist
+tests yet for VK_ANDROID_external_memory_android_hardware_buffer.
+
+I tested the new dEQP testcases with Anvil (the Intel Mesa driver).
+You can too by running:
+    cd bin
+    ./hh-pkg mesa install
+    ./hh-pkg deqp install
+    ./hh-intel-env ./hh-deqp-vk -n 'dEQP-VK.memory.external_memory_acquire_unmodified.*'
+
+To change how a package is built, or add a new package, see the package files
+in `config/pkg` and the script `bin/hh-pkg`.

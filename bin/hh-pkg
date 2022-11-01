@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+source "${${(%):-%x}:A:h}/hh-common.zsh" || exit 1
+
+hh_cmd_pkg "$@"

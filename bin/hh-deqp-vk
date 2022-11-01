@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+source "${${(%):-%x}:A:h}/hh-common.zsh" || exit 1
+
+deqp_vk_dir="$(hh_profile_pkg_dir)/deqp/build/external/vulkancts/modules/vulkan"
+exec "$deqp_vk_dir/deqp-vk" --deqp-archive-dir="$deqp_vk_dir" "$@"

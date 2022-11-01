@@ -1,0 +1,32 @@
+[submodule "deqp"]
+	path = src/deqp
+	url = https://github.com/chadversary/deqp
+	branch = VK_EXT_external_memory_acquire_unmodified
+[submodule "glslang"]
+	path = src/glslang
+	url = https://github.com/KhronosGroup/glslang
+[submodule "mesa"]
+	path = src/mesa
+	url = https://gitlab.freedesktop.org/chadversary/mesa.git
+	branch = VK_EXT_external_memory_acquire_unmodified
+[submodule "robin-hood-hashing"]
+	path = src/robin-hood-hashing
+	url = https://github.com/martinus/robin-hood-hashing
+[submodule "spirv-headers"]
+	path = src/spirv-headers
+	url = https://github.com/KhronosGroup/SPIRV-Headers
+[submodule "spirv-tools"]
+	path = src/spirv-tools
+	url = https://github.com/KhronosGroup/SPIRV-Tools
+[submodule "vulkan-headers"]
+	path = src/vulkan-headers
+	url = https://github.com/chadversary/vulkan-headers
+	branch = VK_EXT_external_memory_acquire_unmodified
+[submodule "vulkan-spec"]
+	path = src/vulkan-spec
+	url = https://github.com/chadversary/vulkan-spec
+	branch = VK_EXT_external_memory_acquire_unmodified
+[submodule "vulkan-validation-layers"]
+	path = src/vulkan-validation-layers
+	url = https://github.com/chadversary/vulkan-validation-layers
+	branch = VK_EXT_external_memory_acquire_unmodified
